@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Question10</title>
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ }
+ header {
+ color: white;
+ padding: 10px;
+ background: gray;
+ }
+ header nav ul {
+ display: flex;
+ align-items: center;
+ gap: 20px;
+ }
+ header nav ul li {
+ list-style: none;
+ font-size: 20px;
+ }
+ Article {
+ margin: 2px 20px;
+ }
+ form {
+ margin: 20px;
+ }
+ p {
+ font-size: 24px;
+ margin: 2px 20px;
+ }
+ video {
+ margin: 20px 20px 20px 150px;
+ height: 200px;
+ width: 500px;
+ }
+ audio {
+ margin: 20px;
+ }
+ input {
+ margin: 2px 20px;
+ }
+ footer {
+ width: 96.6%;
+ position: absolute;
+ background: gray;
+ color: rgb(0, 0, 0);
+ padding: 25px;
+ font-size: 26px;
+ bottom: 0;
+ position: fixed;
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <nav>
+ <ul>
+ <li>Home</li>
+ <li>Contact Us</li>
+ <li>Services</li>
+ <li>About Us</li>
+ </ul>
+ </nav>
+ </header>
+ <form action="">
+ <label>Choose Browser using Datalist Tag: </label> <input list="browser" 
+id="browser"> <datalist id="browser">
+ <option value="Edge"></option>
+ <option value="Firefox"></option>
+ <option value="Chrome"></option>
+ </datalist>
+ </form><br />
+ <center>
+ <p>Video and Audio Tag</p>
+ </center> <video controls preload="auto">
+ <source src="./Extra files/video.mp4" type="video/mp4" />
+ </video>
+ <audio controls autoplay>
+ <source src="./Extra files/audiofile.wav" type="audio/wav" />
+ </audio>
+ <article>
+ <h2>Article Tag</h2>
+ <p>It specifies independent, self-contained content.</p>
+ </article>
+ <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+ <p>Output Tag</p><br />
+ <input type="range" value="50" id="a" />
+ +<input type="number" value="25" id="b" />
+ =<output name="x" for="a b"></output>
+ </form>
+ <footer>
+ <pre align="center"
+ style="font-family: 'Times New Roman', Times, serif; font-size: large; backgroundcolor: pink;">Name:ARMAN Sec:I Rollno:12 </pre>
+ </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!--Create a web page to show newspaper layout effects on contents given in web page (.e. n 
+multiple columns) using html and css-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Newspaper Layout</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			column-gap: 20px;
+			row-gap: 20px;
+		}
+		.article {
+			flex-basis: calc((100% / 3) - 20px);
+			background-color: #fff;
+			border: 1px solid #ccc;
+			padding: 20px;
+			border-radius: 5px;
+		}
+		h2 {
+			font-size: 24px;
+			margin-top: 0;
+		}
+		p {
+			margin-bottom: 0;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="article">
+			<h2>Article 1</h2>
+			<img src="https://picsum.photos/400/250" alt="Article 1 image">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare felis felis, in interdum leo rutrum eu. Nulla vitae nibh nec quam malesuada commodo at id nulla. Nullam sit amet libero aliquet, hendrerit enim sit amet, tempor orci. </p>
+		</div>
+		<div class="article">
+			<h2>Article 2</h2>
+			<img src="https://picsum.photos/400/250" alt="Article 2 image">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare felis felis, in interdum leo rutrum eu. Nulla vitae nibh nec quam malesuada commodo at id nulla. Nullam sit amet libero aliquet, hendrerit enim sit amet, tempor orci. </p>
+		</div>
+		<div class="article">
+			<h2>Article 3</h2>
+			<img src="https://picsum.photos/400/250" alt="Article 3 image">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare felis felis, in interdum leo rutrum eu. Nulla vitae nibh nec quam malesuada commodo at id nulla. Nullam sit amet libero aliquet, hendrerit enim sit amet, tempor orci. </p>
+		</div>
+		<div class="article">
+			<h2>Article 4</h2>
+			<img src="https://picsum.photos/400/250" alt="Article 4 image">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare felis felis, in interdum leo rutrum eu. Nulla vitae nibh nec quam malesuada commodo at id nulla. Nullam sit amet libero aliquet, hendrerit enim sit amet, tempor orci. </p>
+		</div>
+		<div class="article">
+			<h2>Article 5</h2>
+			<img src="https://picsum.photos/400/250" alt="Article 5 image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare felis felis, in interdum leo rutrum eu. Nulla vitae nibh nec quam malesuada commodo at id nulla. Nullam sit amet libero aliquet, hendrerit enim sit amet, tempor orci. </p>
+		</div>
+		<div class="article">
+			<h2>Article 6</h2>
+			<img src="https://picsum.photos/400/250" alt="Article 6 image">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare felis felis, in interdum leo rutrum eu. Nulla vitae nibh nec quam malesuada commodo at id nulla. Nullam sit amet libero aliquet, hendrerit enim sit amet, tempor orci. </p>
+		</div>
+		<div class="article">
+			<h2>Article 7</h2>
+			<img src="https://picsum.photos/400/250" alt="Article 7 image">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare felis felis, in interdum leo rutrum eu. Nulla vitae nibh nec quam malesuada commodo at id nulla. Nullam sit amet libero aliquet, hendrerit enim sit amet, tempor orci. </p>
+		</div>
+	</div>
+</body>
+</html>

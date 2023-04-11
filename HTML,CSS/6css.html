@@ -1,0 +1,44 @@
+<!--Create a web page to show fixed background image (this image will not scroll with the rest 
+of the page) using html and css-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixed Background Image</title>
+	<style>
+		body {
+			background-image: url("https://picsum.photos/1920/1080");
+			background-size:cover;
+			background-attachment:fixed;
+		}
+
+		.content {
+			margin: 50px;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.7);
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 48px;
+			color: white;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		}
+
+		p {
+			font-size: 24px;
+			line-height: 1.5;
+			color: #333;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<h1>Fixed Background Image</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare felis felis, in interdum leo rutrum eu. Nulla vitae nibh nec quam malesuada commodo at id nulla. Nullam sit amet libero aliquet, hendrerit enim sit amet, tempor orci. Sed pulvinar nulla euismod, eu bibendum sapien scelerisque. Pellentesque vel purus eu diam euismod blandit. Nunc eget lacus ac ipsum placerat dictum sed eu nunc. Fusce vulputate, ante non elementum varius, felis felis vulputate nisi, in facilisis nunc enim id ipsum. Fusce congue arcu sit amet augue faucibus, eget tincidunt sapien tempor.</p>
+		<p>Donec scelerisque velit non velit rhoncus vestibulum. Curabitur eget augue vehicula, dapibus elit vel, commodo risus. In laoreet velit magna, vel aliquet tortor efficitur id. Nunc vel risus ut dolor aliquet luctus. Proin vel lectus at sapien laoreet auctor. Integer vitae ex eget magna dictum ullamcorper. Curabitur aliquam enim nunc, id egestas metus tempor eu. Vivamus nec faucibus lectus, quis consequat ante.</p>
+		<p>Suspendisse eget justo pharetra, commodo metus sed, euismod tellus. Suspendisse vel enim nec tellus consectetur lobortis non non nisl. Curabitur lobortis nisi vel tellus luctus ultrices. Donec lobortis imperdiet urna vitae consectetur. Pellentesque sed justo vel sapien lobortis tristique. Integer cursus vitae lorem vel faucibus. Nam id rutrum nunc, in dignissim purus.</p>
+	</div>
+</body>
+</html>
